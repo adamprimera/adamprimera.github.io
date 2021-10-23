@@ -2,8 +2,23 @@
     font-family: 'Poppins';
 }
 
+.mt-n1 {
+    margin-top: -0.25rem !important;
+}
+
 .introduce {
-    font-size: large;
+    font-size: 28px;
     font-weight: 500;
     color: #0050C9;
+}
+
+.lead-text {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.description-text {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #909090;
 }
