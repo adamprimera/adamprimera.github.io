@@ -9,54 +9,86 @@
     <!-- * CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/glide.core.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- * Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- * Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 
     <!-- * JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/js/glide.min.js"></script>
+
     <title>Adam Rachman Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand fw-bolder text-primary" href="#">
-                Adam Rachman
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link active mx-3 fw-bolder" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link mx-3" href="#project">Project</a>
-                    <a class="nav-link mx-3" href="#about">About</a>
-                    <a class="nav-link mx-3" href="#contact">Contact</a>
+    <section>
+        <nav class="navbar fixed-top navbar-expand-md navbar-light">
+            <div class="container">
+                <button class="navbar-toggler pull-right ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active mx-3 fw-bolder" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link mx-3" href="#projects">Project</a>
+                        <a class="nav-link mx-3" href="#about">About</a>
+                        <a class="nav-link mx-3" href="#contact">Contact</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
 
-    <div class="container mt-5">
-        <div class="py-5 mb-4 rounded-3">
+    <section id="home" style="padding-top: 100px;">
+        <div class="container mt-3 mb-5">
             <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-md-6 d-block d-lg-none mb-4" style="margin-top: -50px;">
+                <div class="col-md-6 d-block d-lg-none mb-4 mt-4" style="margin-top: -50px;">
                     <img class="rounded mx-auto d-block" src="assets/images/jumbotron_images.png" alt="jumbotron_images"
                         width="250px">
                 </div>
 
                 <div class="col-md-6 text-center text-md-start">
-                    <h5 class="text-primary">Hi, I'm Adam Rachman</h5>
+                    <h5 class="accent">Hi, I'm Adam Rachman</h5>
                     <p class="display-6 fw-bold">Full Stack Web Developer Based in Malang</p>
                     <p class="text-muted ">Born in 1995, Works as Application & Development Supervisor in PT
                         Berca
                         Kawan Sejati (Armour Cigarretes Distribution Company) until now</p>
+                    <button class="btn btn-accent mt-5"><i class="fas fa-file-pdf me-2"></i> Download CV</button>
+                    <div class="mt-3">
+                        <!-- !github -->
+                        <a href="https://github.com/adamprimera/">
+                            <svg class="githubIcon" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.0325 2.5C8.91618 2.49921 3.70229 6.93498 2.72302 12.9724C1.74375 19.0098 5.28826 24.8662 11.0913 26.7987C11.7163 26.9112 11.94 26.5275 11.94 26.1975C11.94 25.9013 11.93 25.1162 11.9263 24.0725C8.45752 24.8225 7.72502 22.4 7.72502 22.4C7.49666 21.6462 7.00574 20.9992 6.34127 20.5763C5.21627 19.8025 6.42752 19.82 6.42752 19.82C7.22837 19.9298 7.93321 20.4043 8.33627 21.105C8.67744 21.7253 9.25222 22.1837 9.9329 22.3783C10.6136 22.5729 11.3438 22.4875 11.9613 22.1413C12.0193 21.5088 12.3007 20.9176 12.755 20.4738C9.98752 20.16 7.07752 19.09 7.07752 14.3113C7.06216 13.0752 7.52114 11.8804 8.36002 10.9725C7.98046 9.89664 8.02516 8.71657 8.48502 7.6725C8.48502 7.6725 9.53127 7.33625 11.9125 8.94875C13.9548 8.38876 16.1102 8.38876 18.1525 8.94875C20.535 7.335 21.58 7.6725 21.58 7.6725C22.042 8.71607 22.0867 9.89697 21.705 10.9725C22.547 11.8803 23.0056 13.0783 22.985 14.3163C22.985 19.1075 20.0725 20.16 17.295 20.4688C17.8942 21.0813 18.2015 21.9217 18.1388 22.7763C18.1388 24.4438 18.1238 25.7888 18.1238 26.1975C18.1238 26.5313 18.3463 26.9188 18.9825 26.7963C24.7831 24.8604 28.3238 19.0037 27.3425 12.9679C26.3613 6.93207 21.1476 2.4986 15.0325 2.5Z"
+                                    fill="#FF6C1A" />
+                            </svg>
+                        </a>
+
+                        <!-- !instagram -->
+                        <a href="https://instagram.com/adamprimera">
+                            <svg class="instagramIcon" width="25" height="25" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.0025 26.3013C11.9275 26.3013 11.565 26.285 10.365 26.2325C9.42922 26.2017 8.50554 26.0115 7.63375 25.67C6.12539 25.083 4.93268 23.8898 4.34625 22.3812C4.01789 21.5063 3.84077 20.5819 3.8225 19.6475C3.7525 18.45 3.7525 18.0575 3.7525 15.0062C3.7525 11.9225 3.76875 11.5625 3.8225 10.3687C3.84117 9.43565 4.01828 8.51251 4.34625 7.63875C4.93204 6.12816 6.12669 4.93396 7.6375 4.34875C8.51081 4.019 9.43418 3.84143 10.3675 3.82375C11.5613 3.75625 11.9538 3.75625 15.0025 3.75625C18.1025 3.75625 18.4588 3.7725 19.64 3.82375C20.5757 3.84158 21.5016 4.01914 22.3775 4.34875C23.8879 4.93463 25.0823 6.12859 25.6688 7.63875C26.0027 8.52524 26.1807 9.46281 26.195 10.41C26.265 11.6075 26.265 11.9987 26.265 15.0488C26.265 18.0988 26.2475 18.4987 26.195 19.6825C26.1764 20.6178 25.9989 21.543 25.67 22.4188C25.0821 23.9284 23.8876 25.122 22.3775 25.7088C21.5028 26.0365 20.5789 26.2136 19.645 26.2325C18.4513 26.3013 18.06 26.3013 15.0025 26.3013ZM14.96 5.735C11.9025 5.735 11.585 5.75 10.3913 5.80375C9.67873 5.81319 8.9731 5.94467 8.305 6.1925C7.31844 6.57001 6.53779 7.34749 6.15625 8.3325C5.90652 9.00787 5.77501 9.72122 5.7675 10.4412C5.70125 11.6525 5.70125 11.97 5.70125 15.0062C5.70125 18.0062 5.7125 18.37 5.7675 19.5738C5.77869 20.2865 5.91012 20.9923 6.15625 21.6613C6.53835 22.6456 7.31887 23.4225 8.305 23.8C8.97265 24.0495 9.67857 24.181 10.3913 24.1888C11.6013 24.2588 11.92 24.2588 14.96 24.2588C18.0263 24.2588 18.3438 24.2438 19.5275 24.1888C20.2405 24.1801 20.9467 24.0486 21.615 23.8C22.5956 23.4192 23.3712 22.6441 23.7525 21.6638C24.0018 20.9878 24.1332 20.2741 24.1413 19.5537H24.155C24.2088 18.3587 24.2088 18.04 24.2088 14.9862C24.2088 11.9325 24.195 11.6112 24.1413 10.4175C24.13 9.70556 23.9986 9.00064 23.7525 8.3325C23.372 7.35071 22.5963 6.57411 21.615 6.1925C20.9468 5.94343 20.2406 5.8119 19.5275 5.80375C18.3188 5.735 18.0025 5.735 14.96 5.735ZM15.0025 20.78C12.665 20.7815 10.5568 19.3747 9.66108 17.2156C8.76538 15.0565 9.25864 12.5704 10.9108 10.9168C12.5629 9.26324 15.0486 8.76784 17.2085 9.66166C19.3683 10.5555 20.777 12.6625 20.7775 15C20.7741 18.1888 18.1913 20.7738 15.0025 20.78ZM15.0025 11.2475C12.9314 11.2475 11.2525 12.9264 11.2525 14.9975C11.2525 17.0686 12.9314 18.7475 15.0025 18.7475C17.0736 18.7475 18.7525 17.0686 18.7525 14.9975C18.7477 12.9284 17.0716 11.2523 15.0025 11.2475ZM21.0025 10.3563C20.2593 10.3535 19.6586 9.74948 19.66 9.00626C19.6614 8.26303 20.2643 7.66126 21.0075 7.66126C21.7507 7.66126 22.3536 8.26302 22.355 9.00625C22.3553 9.36483 22.2129 9.70878 21.9591 9.9621C21.7053 10.2154 21.3611 10.3572 21.0025 10.3563Z"
+                                    fill="#FF6C1A" />
+                            </svg>
+                        </a>
+
+                    </div>
                 </div>
 
                 <div class="col-md-6 d-none d-lg-block">
@@ -65,7 +97,113 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="projects" class="mt-4">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="heading text-center mt-4 mb-4">MY POPULAR <span class="accent">PROJECTS</span></h4>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="glide basic">
+                                <div class="glide__track" data-glide-el="track">
+                                    <div class="glide__slides">
+                                        <div class="glide__slide">
+                                            <div class="card h-100 shadow-sm">
+                                                <img src="assets/images/popular1.png" class="card-img-bottom"
+                                                    alt="popular1" height="200">
+                                                <div class="card-body mt-4">
+                                                    <p class="accent fw-bold">Sales Distribution <span
+                                                            class="text-dark">Management</span>
+                                                    </p>
+                                                    <p class="card-text text-muted">Sales Distribution Management adalah
+                                                        sebuah
+                                                        aplikasi
+                                                        yang dapat membantu untuk melakukan monitoring penjualan. <a
+                                                            href="#" class="accent">Read More ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="glide__slide">
+                                            <div class="card h-100 shadow-sm">
+                                                <img src="assets/images/popular2.png" class="card-img-bottom"
+                                                    alt="popular2" height="200">
+                                                <div class="card-body mt-4">
+                                                    <p class="accent fw-bold">Warehouse <span
+                                                            class="text-dark">Management</span>
+                                                    </p>
+                                                    <p class="card-text text-muted">Warehouse management system adalah
+                                                        aplikasi
+                                                        yang
+                                                        digunakan untuk memonitoring inventory berupa product. <a
+                                                            href="#" class="accent">Read
+                                                            More ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="glide__slide">
+                                            <div class="card h-100 shadow-sm">
+                                                <img src="assets/images/popular3.png" class="card-img-bottom"
+                                                    alt="popular3" height="200">
+                                                <div class="card-body mt-4">
+                                                    <p class="accent fw-bold">Customer <span
+                                                            class="text-dark">Management</span>
+                                                    </p>
+                                                    <p class="card-text text-muted">Customer management system adalah
+                                                        sebuah
+                                                        aplikasi
+                                                        yang
+                                                        dapat melihat riwayat , lokasi , pertumbuhan dan foto dari
+                                                        customer.
+                                                        <a href="#" class="accent">Read
+                                                            More ></a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="others-projects">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="heading text-center mt-4 mb-4">BUNCH OF <span class="accent">CERTIFICATES</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        new Glide(".glide.basic", {
+            type: 'carousel',
+            perView: 3,
+            breakpoints: {
+                800: {
+                    perView: 1
+                },
+            }
+        }).mount()
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $('.navbar-light').toggleClass('scrolled', $(this).scrollTop() > 50);
+                $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > 50);
+            });
+        });
+    </script>
 </body>
 
 </html>

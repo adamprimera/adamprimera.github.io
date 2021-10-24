@@ -1,3 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --accentColor: #ff6c1a;
+  --black: #000;
+  --secondaryColor: #fff8f3;
+  --white: #fff;
+}
+
 body {
-    font-family: 'Poppins';
+  font-family: "poppins", sans-serif;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+path {
+  transition: fill 0.3s ease;
+}
+
+.githubIcon path {
+  fill: var(--black);
+}
+
+.githubIcon:hover path {
+  fill: var(--accentColor);
+}
+
+.instagramIcon path {
+  fill: var(--black);
+}
+
+.instagramIcon:hover path {
+  fill: var(--accentColor);
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: var(--accentColor) !important;
+}
+
+.nav-link.active {
+  color: var(--accentColor) !important;
+  font-weight: 800;
+}
+
+.nav-link.active:hover {
+  color: var(--black) !important;
+}
+
+.btn-accent {
+  background-color: var(--accentColor) !important;
+  color: var(--white);
+}
+
+.accent {
+  color: var(--accentColor) !important;
+}
+
+.heading {
+  font-weight: 800;
+}
+
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
+
+a.url p {
+  transition: 0.3s;
+}
+
+a.url:hover p {
+  color: var(--black) !important;
+}
+
+#projects {
+  background-color: var(--secondaryColor) !important;
+  min-height: 500px;
+}
+
+#others-projects {
+  background-color: var(--white) !important;
+  min-height: 500px;
+}
+
+.navbar-light {
+  transition: 500ms ease;
+  background: transparent;
+}
+
+.navbar-light.scrolled {
+  background: var(--accentColor) !important;
+}
+
+.nav-link.scrolled {
+  color: var(--white) !important;
+}
+
+.nav-link.scrolled:hover {
+  color: var(--black) !important;
+}
+
+.nav-link.active.scrolled {
+  color: var(--black) !important;
+  font-weight: 800;
+}
+
+.nav-link.active.scrolled:hover {
+  color: var(--white) !important;
 }
